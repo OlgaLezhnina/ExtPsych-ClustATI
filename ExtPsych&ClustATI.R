@@ -284,6 +284,8 @@ summary(fitCFA.atiMLR, standardized=TRUE, fit.measures = TRUE)
 
 ## My own addition, see modification indices
 modificationIndices(fitCFA.ati, sort. = TRUE, power = TRUE)
+#and for CFA with MLR
+modificationIndices(fitCFA.atiMLR, sort. = TRUE, power = TRUE)
 
 ## Return to Dima (2018) https://doi.org/10.1080/21642850.2018.1472602
 # Step5
