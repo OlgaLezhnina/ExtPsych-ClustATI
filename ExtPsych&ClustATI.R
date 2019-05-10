@@ -282,12 +282,6 @@ Factor1 =~ ati01 + ati02 + ati03R + ati04 + ati05 + ati06R + ati07 + ati08R + at
 fitCFA.atiMLR <- lavaan::cfa(CFA.ati, data = ati.data, estimator = "MLR")
 summary(fitCFA.atiMLR, standardized=TRUE, fit.measures = TRUE)
 
-CFA.ati <- '
-+ Factor1 =~ ati01 + ati02 + ati03R + ati04 + ati05 + ati06R + ati07 + ati08R + ati09'
-fitCFA.ati <- lavaan::cfa(CFA.ati, data=ati.data)
-summary(fitCFA.ati, standardized=TRUE, fit.measures = TRUE)
-
-
 ## My own addition, see modification indices
 modificationIndices(fitCFA.ati, sort. = TRUE, power = TRUE)
 
