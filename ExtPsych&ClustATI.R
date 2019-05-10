@@ -264,7 +264,7 @@ plotnScree(nS)
 # very simple structure analysis
 vss(ati.data, 5)
 
-# factor solution
+# factor solution to get loadings and variance explained
 fa(ati.data, nfactors = 1, fm = "minres", n.iter = 10)
 
 # ICLUST (groups items) for ATI
