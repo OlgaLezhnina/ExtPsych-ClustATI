@@ -121,7 +121,7 @@ Q3 + 1.5 * IQR
 outlier
 sum(outlier)
 
-# homoheneity
+# homogeneity
 Hvalues <- coefH(ati.dataN)
 # homogeneity for items
 Hvalues$Hi
