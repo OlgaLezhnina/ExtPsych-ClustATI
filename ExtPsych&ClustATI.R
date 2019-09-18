@@ -341,6 +341,8 @@ hist(ati.mean8)
 # FINISH Dima (2918) https://doi.org/10.1080/21642850.2018.1472602
 
 ## Hierarchical clustering on variables with ClustOfVar package
+#rename columns for clearer pic
+names(means.data) <- c("ATI", "GEX","NFC", "TSLS", "TPSS","INT","RFS", "BF-E", "BF-C", "BF-N", "BF-O", "BF-A")
 # transform data (scales and means) into matrix
 meansM.data <- data.matrix(means.data)
 scalesM.data <- data.matrix(scales.data)
