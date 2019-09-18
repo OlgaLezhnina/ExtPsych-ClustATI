@@ -266,6 +266,8 @@ vss(ati.data, 5)
 
 # factor solution to get loadings and variance explained
 fa(ati.data, nfactors = 1, fm = "minres", n.iter = 10)
+# method PA
+fa(ati.data,  nfactors = 1, fm = "pa")
 
 # ICLUST (groups items) for ATI
 summary(iclust(ati.dataN, title = "ICLUST for ATI"))
